@@ -17,3 +17,10 @@ One line for collection views as well (or any other class that subclass UIScroll
 ```Swift
 setupKeyboardNotifcationListenerForScrollView(collectionView)
 ```
+
+To remove observers for example in deinit
+```Swift
+deinit {
+        removeKeyboardNotificationListeners()
+    }
+```
