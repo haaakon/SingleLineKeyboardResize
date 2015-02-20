@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC36BCBC1A97CFBA005BE356 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BCBB1A97CFBA005BE356 /* DataSource.swift */; };
 		EC687B011A8C938400BD1E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B001A8C938400BD1E6A /* AppDelegate.swift */; };
 		EC687B031A8C938400BD1E6A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B021A8C938400BD1E6A /* FirstViewController.swift */; };
 		EC687B051A8C938400BD1E6A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B041A8C938400BD1E6A /* SecondViewController.swift */; };
@@ -14,6 +15,8 @@
 		EC687B0A1A8C938400BD1E6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC687B091A8C938400BD1E6A /* Images.xcassets */; };
 		EC687B0D1A8C938400BD1E6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC687B0B1A8C938400BD1E6A /* LaunchScreen.xib */; };
 		EC687B191A8C938400BD1E6A /* ScrollViewKeyboardResizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B181A8C938400BD1E6A /* ScrollViewKeyboardResizeTests.swift */; };
+		EC687B241A8C93A500BD1E6A /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B231A8C93A500BD1E6A /* UIViewController+Keyboard.swift */; };
+		ECA9CC131A97D2BB005BC087 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9CC121A97D2BB005BC087 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC36BCBB1A97CFBA005BE356 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		EC687AFB1A8C938400BD1E6A /* ScrollViewKeyboardResize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewKeyboardResize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC687AFF1A8C938400BD1E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC687B001A8C938400BD1E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,9 @@
 		EC687B121A8C938400BD1E6A /* ScrollViewKeyboardResizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewKeyboardResizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC687B171A8C938400BD1E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC687B181A8C938400BD1E6A /* ScrollViewKeyboardResizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewKeyboardResizeTests.swift; sourceTree = "<group>"; };
+		EC687B221A8C93A400BD1E6A /* ScrollViewKeyboardResize-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollViewKeyboardResize-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC687B231A8C93A500BD1E6A /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Keyboard.swift"; path = "ScrollViewKeyboardResize/UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		ECA9CC121A97D2BB005BC087 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +68,8 @@
 		EC687AF21A8C938400BD1E6A = {
 			isa = PBXGroup;
 			children = (
-				EC687AFD1A8C938400BD1E6A /* ScrollViewKeyboardResize */,
+				EC687B231A8C93A500BD1E6A /* UIViewController+Keyboard.swift */,
+				EC687AFD1A8C938400BD1E6A /* ScrollViewKeyboardResizeExample */,
 				EC687B151A8C938400BD1E6A /* ScrollViewKeyboardResizeTests */,
 				EC687AFC1A8C938400BD1E6A /* Products */,
 			);
@@ -76,17 +84,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC687AFD1A8C938400BD1E6A /* ScrollViewKeyboardResize */ = {
+		EC687AFD1A8C938400BD1E6A /* ScrollViewKeyboardResizeExample */ = {
 			isa = PBXGroup;
 			children = (
 				EC687B001A8C938400BD1E6A /* AppDelegate.swift */,
 				EC687B021A8C938400BD1E6A /* FirstViewController.swift */,
 				EC687B041A8C938400BD1E6A /* SecondViewController.swift */,
 				EC687B061A8C938400BD1E6A /* Main.storyboard */,
+				EC36BCBB1A97CFBA005BE356 /* DataSource.swift */,
+				ECA9CC121A97D2BB005BC087 /* TableViewCell.swift */,
 				EC687B091A8C938400BD1E6A /* Images.xcassets */,
 				EC687B0B1A8C938400BD1E6A /* LaunchScreen.xib */,
 				EC687AFE1A8C938400BD1E6A /* Supporting Files */,
+				EC687B221A8C93A400BD1E6A /* ScrollViewKeyboardResize-Bridging-Header.h */,
 			);
+			name = ScrollViewKeyboardResizeExample;
 			path = ScrollViewKeyboardResize;
 			sourceTree = "<group>";
 		};
@@ -218,6 +230,9 @@
 				EC687B051A8C938400BD1E6A /* SecondViewController.swift in Sources */,
 				EC687B011A8C938400BD1E6A /* AppDelegate.swift in Sources */,
 				EC687B031A8C938400BD1E6A /* FirstViewController.swift in Sources */,
+				ECA9CC131A97D2BB005BC087 /* TableViewCell.swift in Sources */,
+				EC36BCBC1A97CFBA005BE356 /* DataSource.swift in Sources */,
+				EC687B241A8C93A500BD1E6A /* UIViewController+Keyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +357,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ScrollViewKeyboardResize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScrollViewKeyboardResize/ScrollViewKeyboardResize-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +370,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ScrollViewKeyboardResize/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScrollViewKeyboardResize/ScrollViewKeyboardResize-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +431,7 @@
 				EC687B1E1A8C938400BD1E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC687B1F1A8C938400BD1E6A /* Build configuration list for PBXNativeTarget "ScrollViewKeyboardResizeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +440,7 @@
 				EC687B211A8C938400BD1E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
