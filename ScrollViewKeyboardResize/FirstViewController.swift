@@ -20,10 +20,9 @@ class FirstViewController: UIViewController, UITableViewDelegate {
         tableView.dataSource = dataSource
         setupKeyboardNotifcationListenerForScrollView(tableView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    deinit {
+        removeKeyboardNotificationListeners()
     }
 
 }
