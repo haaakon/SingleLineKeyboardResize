@@ -32,12 +32,13 @@ deinit {
 ```
 
 ## Installation
-
+### CocoaPods
 SingleLineKeyboardResize is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
     pod "SingleLineKeyboardResize"
-
+### Without CocoaPods: 
+It's only one file you need, 'UIViewController+Keyboard.swift', copy it into your project, and you are good to go.
 
 ## Author
 
