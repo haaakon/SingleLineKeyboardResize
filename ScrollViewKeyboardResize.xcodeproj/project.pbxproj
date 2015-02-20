@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC181A081A97D7FA006AEA1B /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC181A071A97D7FA006AEA1B /* UIViewController+Keyboard.swift */; };
+		EC181A0E1A97DD2F006AEA1B /* SingleLineKeyboardResize.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EC181A0D1A97DD2F006AEA1B /* SingleLineKeyboardResize.podspec */; };
 		EC36BCBC1A97CFBA005BE356 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BCBB1A97CFBA005BE356 /* DataSource.swift */; };
 		EC687B011A8C938400BD1E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B001A8C938400BD1E6A /* AppDelegate.swift */; };
 		EC687B031A8C938400BD1E6A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC687B021A8C938400BD1E6A /* FirstViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		EC181A071A97D7FA006AEA1B /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		EC181A0D1A97DD2F006AEA1B /* SingleLineKeyboardResize.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SingleLineKeyboardResize.podspec; sourceTree = "<group>"; };
 		EC36BCBB1A97CFBA005BE356 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		EC687AFB1A8C938400BD1E6A /* ScrollViewKeyboardResize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewKeyboardResize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC687AFF1A8C938400BD1E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EC181A071A97D7FA006AEA1B /* UIViewController+Keyboard.swift */,
+				EC181A0D1A97DD2F006AEA1B /* SingleLineKeyboardResize.podspec */,
 				EC687AFD1A8C938400BD1E6A /* ScrollViewKeyboardResizeExample */,
 				EC687B151A8C938400BD1E6A /* ScrollViewKeyboardResizeTests */,
 				EC687AFC1A8C938400BD1E6A /* Products */,
@@ -209,6 +212,7 @@
 			files = (
 				EC687B081A8C938400BD1E6A /* Main.storyboard in Resources */,
 				EC687B0D1A8C938400BD1E6A /* LaunchScreen.xib in Resources */,
+				EC181A0E1A97DD2F006AEA1B /* SingleLineKeyboardResize.podspec in Resources */,
 				EC687B0A1A8C938400BD1E6A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
