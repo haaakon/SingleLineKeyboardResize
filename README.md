@@ -8,7 +8,12 @@ With this non-intrusive UIViewController extension, only a single line of code w
 
 USAGE
 =====
+For a tableView reference from your storyboard or nib:
 ```Swift
 setupKeyboardNotifcationListenerForScrollView(tableView)
 ```
 
+One line for collection views as well (or any other class that subclass UIScrollView
+```Swift
+setupKeyboardNotifcationListenerForScrollView(collectionView)
+```
