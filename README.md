@@ -17,14 +17,25 @@ Demo
 
 USAGE
 =====
-For a tableView reference from your storyboard or nib:
-```Swift
-setupKeyboardNotifcationListenerForScrollView(tableView)
+For a scrollView from nib or storyboard
+```swift
+@IBOutlet weak var scrollView : UIScrollView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupKeyboardNotifcationListenerForScrollView(scrollView)
+    }
 ```
 
-One line for collection views as well (or any other class that subclass UIScrollView
+Just as simple if you want to use it with a tableView
 ```Swift
-setupKeyboardNotifcationListenerForScrollView(collectionView)
+@IBOutlet weak var tableView : UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupKeyboardNotifcationListenerForScrollView(tableView)
+        
+    }
 ```
 
 To remove observers for example in deinit
