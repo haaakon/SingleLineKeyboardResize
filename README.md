@@ -8,6 +8,9 @@ With this non-intrusive UIViewController extension, only a single line of code w
 
 Demo
 =====
+#### UIScrollView
+![Resize Example](https://raw.githubusercontent.com/haaakon/SingleLineKeyboardResize/master/example2.gif)
+#### UITableView
 ![Resize Example](https://raw.githubusercontent.com/haaakon/SingleLineKeyboardResize/master/example.gif)
 
 
