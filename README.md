@@ -1,7 +1,7 @@
 # SingleLineKeyboardResize
 With this non-intrusive UIViewController extension, only a single line of code will make your scrollView auto resize when the keyboard appears. It literally cannot get easier than this, and you don't even need to subclass anything.
 
-[![CI Status](http://img.shields.io/travis/Håkon Bogen/SingleLineKeyboardResize.svg?style=flat)](https://travis-ci.org/Håkon Bogen/SingleLineKeyboardResize)
+[![CI Status](http://img.shields.io/travis/Haaakon/SingleLineKeyboardResize.svg?style=flat)](https://travis-ci.org/haaakon/SingleLineKeyboardResize)
 [![Version](https://img.shields.io/cocoapods/v/SingleLineKeyboardResize.svg?style=flat)](http://cocoadocs.org/docsets/SingleLineKeyboardResize)
 [![License](https://img.shields.io/cocoapods/l/SingleLineKeyboardResize.svg?style=flat)](http://cocoadocs.org/docsets/SingleLineKeyboardResize)
 [![Platform](https://img.shields.io/cocoapods/p/SingleLineKeyboardResize.svg?style=flat)](http://cocoadocs.org/docsets/SingleLineKeyboardResize)
