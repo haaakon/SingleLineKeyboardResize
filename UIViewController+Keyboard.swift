@@ -1,10 +1,9 @@
 //
 //  UIViewController+Keyboard.swift
-//  BoligLogg
 //
 //  Created by Håkon Bogen on 10/12/14.
 //  Copyright (c) 2014 Håkon Bogen. All rights reserved.
-//
+//  MIT LICENSE
 
 import UIKit
 
