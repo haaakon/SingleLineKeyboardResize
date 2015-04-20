@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SingleLineKeyboardResize"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A single line of code will make your UITableView or any UIScrollView auto resize when the keyboard appears"
   s.description      = <<-DESC
                        With this non-intrusive UIViewController extension, only a single line of code will make your scrollView auto resize when the keyboard appears. It literally cannot get easier than this, and you don't even need to subclass anything.
