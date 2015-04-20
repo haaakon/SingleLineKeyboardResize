@@ -11,13 +11,13 @@ private var scrollViewKey : UInt8 = 0
 
 extension UIViewController {
     
-    func setupKeyboardNotifcationListenerForScrollView(scrollView: UIScrollView) {
+    public func setupKeyboardNotifcationListenerForScrollView(scrollView: UIScrollView) {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
         internalScrollView = scrollView
     }
     
-    func removeKeyboardNotificationListeners() {
+    public func removeKeyboardNotificationListeners() {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
