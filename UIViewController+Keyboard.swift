@@ -41,8 +41,8 @@ extension UIViewController {
         let options: UIViewAnimationOptions = [.BeginFromCurrentState, curveAnimationOption]
         UIView.animateWithDuration(animationDuration, delay: 0, options:options, animations: { () -> Void in
             let insetHeight = (self.internalScrollView.frame.height + self.internalScrollView.frame.origin.y) - keyboardFrameConvertedToViewFrame.origin.y
-            self.internalScrollView.contentInset = UIEdgeInsetsMake(0, 0, insetHeight, 0)
-            self.internalScrollView.scrollIndicatorInsets  = UIEdgeInsetsMake(0, 0, insetHeight, 0)
+            self.internalScrollView.contentInset = UIEdgeInsetsMake(self.internalScrollView.contentInset.top, 0, insetHeight, 0)
+            self.internalScrollView.scrollIndicatorInsets  = UIEdgeInsetsMake(self.internalScrollView.scrollIndicatorInsets.top, 0, insetHeight, 0)
             }) { (complete) -> Void in
         }
     }
@@ -54,8 +54,8 @@ extension UIViewController {
         let curveAnimationOption = UIViewAnimationOptions(rawValue: UInt(animationCurve))
         let options: UIViewAnimationOptions = [.BeginFromCurrentState, curveAnimationOption]
         UIView.animateWithDuration(animationDuration, delay: 0, options:options, animations: { () -> Void in
-            self.internalScrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-            self.internalScrollView.scrollIndicatorInsets  = UIEdgeInsetsMake(0, 0, 0, 0)
+            self.internalScrollView.contentInset = UIEdgeInsetsMake(self.internalScrollView.contentInset.top, 0, 0, 0)
+            self.internalScrollView.scrollIndicatorInsets  = UIEdgeInsetsMake(self.internalScrollView.scrollIndicatorInsets.top, 0, 0, 0)
             }) { (complete) -> Void in
         }
     }
