@@ -34,10 +34,8 @@ extension UIViewController {
     func keyboardWillShow(notification: NSNotification) {
         let userInfo = notification.userInfo as! Dictionary<String, AnyObject>
         let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
-        let animationCurve = userInfo[UIKeyboardAnimationCurveUserInfoKey]!.intValue
         let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey]?.CGRectValue
         let keyboardFrameConvertedToViewFrame = view.convertRect(keyboardFrame!, fromView: nil)
-        let curveAnimationOption = UIViewAnimationOptions(rawValue: UInt(animationCurve))
         let options = UIViewAnimationOptions.BeginFromCurrentState
         UIView.animateWithDuration(animationDuration, delay: 0, options:options, animations: { () -> Void in
             let insetHeight = (self.internalScrollView.frame.height + self.internalScrollView.frame.origin.y) - keyboardFrameConvertedToViewFrame.origin.y
@@ -50,10 +48,6 @@ extension UIViewController {
     func keyboardWillHide(notification: NSNotification) {
         let userInfo = notification.userInfo as! Dictionary<String, AnyObject>
         let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSTimeInterval
-        let animationCurve = userInfo[UIKeyboardAnimationCurveUserInfoKey]!.intValue
-        let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey]?.CGRectValue
-        let keyboardFrameConvertedToViewFrame = view.convertRect(keyboardFrame!, fromView: nil)
-        let curveAnimationOption = UIViewAnimationOptions(rawValue: UInt(animationCurve))
         let options = UIViewAnimationOptions.BeginFromCurrentState
         UIView.animateWithDuration(animationDuration, delay: 0, options:options, animations: { () -> Void in
             self.internalScrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
