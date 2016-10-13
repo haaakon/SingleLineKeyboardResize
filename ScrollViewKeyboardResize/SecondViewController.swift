@@ -17,9 +17,9 @@ class SecondViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         setupKeyboardNotifcationListenerForScrollView(scrollView)
         // Do any additional setup after loading the view, typically from a nib.
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, 700)
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: 700)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +27,7 @@ class SecondViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
