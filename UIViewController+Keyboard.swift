@@ -31,7 +31,7 @@ extension UIViewController {
         }
     }
     
-    func keyboardWillShow(_ notification: Notification) {
+    @objc func keyboardWillShow(_ notification: Notification) {
         let userInfo = (notification as NSNotification).userInfo as! Dictionary<String, AnyObject>
         let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey]?.cgRectValue
@@ -45,7 +45,7 @@ extension UIViewController {
         }
     }
     
-    func keyboardWillHide(_ notification: Notification) {
+    @objc func keyboardWillHide(_ notification: Notification) {
         let userInfo = (notification as NSNotification).userInfo as! Dictionary<String, AnyObject>
         let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         let options = UIViewAnimationOptions.beginFromCurrentState
