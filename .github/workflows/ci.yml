@@ -1,0 +1,9 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: xcodebuild -project ScrollViewKeyboardResize.xcodeproj -scheme ScrollViewKeyboardResize build
